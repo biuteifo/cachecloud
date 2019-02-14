@@ -6,5 +6,5 @@
         " default-autowire="byName">
 
 	<bean id="configService" class="com.sohu.cache.web.service.impl.ConfigServiceImpl" init-method="init"/>
-	
+	<!-- <bean id="velocityEngine" class="org.apache.velocity.app.VelocityEngine" init-method="init"/> -->
 </beans>

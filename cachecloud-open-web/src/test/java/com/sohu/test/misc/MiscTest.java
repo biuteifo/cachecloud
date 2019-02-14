@@ -1,17 +1,15 @@
 package com.sohu.test.misc;
 
-import com.sohu.test.SimpleBaseTest;
-
-import com.google.common.collect.ImmutableMap;
-import org.apache.commons.collections4.MapUtils;
-import org.junit.Test;
-
 import java.io.File;
 import java.net.URISyntaxException;
 import java.net.URL;
 import java.nio.file.Paths;
 import java.util.HashMap;
 import java.util.Map;
+
+import org.junit.Test;
+
+import com.sohu.test.SimpleBaseTest;
 
 /**
  * User: lingguo
@@ -55,14 +53,14 @@ public class MiscTest extends SimpleBaseTest {
         map.put("third", null);
         logger.info("third from map: {}", map.get("third"));
 
-        try {
-            ImmutableMap<String, Long> readMap = ImmutableMap.copyOf(map);
-            logger.info("third from readMap: {}", readMap.get("third"));
-        } catch (Exception e) {
-            logger.error(e.getMessage(), e);
-        }
-
-        logger.info("third from MapUtils: {}", MapUtils.getLong(map, "third", 1000L));
+//        try {
+//            ImmutableMap<String, Long> readMap = ImmutableMap.copyOf(map);
+//            logger.info("third from readMap: {}", readMap.get("third"));
+//        } catch (Exception e) {
+//            logger.error(e.getMessage(), e);
+//        }
+//
+//        logger.info("third from MapUtils: {}", MapUtils.getLong(map, "third", 1000L));
     }
 
     @Test

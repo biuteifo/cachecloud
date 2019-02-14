@@ -55,7 +55,7 @@ public class VelocityUtils {
             charset = customCharset;
         }
         Properties p = new Properties();
-        p.setProperty("file.resource.loader.path", Thread.currentThread().getContextClassLoader().getResource("").getPath());
+        p.setProperty("file.resource.loader.path", Thread.currentThread().getContextClassLoader().getResource("").getPath()+"templates/");
         p.setProperty(Velocity.ENCODING_DEFAULT, "UTF-8");
         p.setProperty(Velocity.INPUT_ENCODING, "UTF-8");
         p.setProperty(Velocity.OUTPUT_ENCODING, "UTF-8");
@@ -74,7 +74,7 @@ public class VelocityUtils {
         FileOutputStream fos = null;
         StringWriter writer = null;
         try {
-            Template template = engine.getTemplate(templatePath);
+            Template template = Velocity.getTemplate(templatePath);
             writer = new StringWriter();
             template.merge(context, writer);
         } catch (ResourceNotFoundException ex) {

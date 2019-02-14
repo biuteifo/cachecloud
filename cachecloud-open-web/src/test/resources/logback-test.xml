@@ -4,10 +4,11 @@
   http://logback.qos.ch/manual/configuration.html
   -->
 <configuration scan="true" scanPeriod="30 seconds">
+	<property name="log.pattern" value="[%-5level] %date --%thread-- [%logger-%line] %msg %n" />
 
     <appender name="console" class="ch.qos.logback.core.ConsoleAppender">
         <encoder>
-            <pattern>%d{HH:mm:ss.SSS} [%thread] %-5level %logger{36} - %msg%n</pattern>
+            <pattern>[%-5level] %date --%thread-- [%logger-%line] %msg %n</pattern>
         </encoder>
     </appender>
 

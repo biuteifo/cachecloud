@@ -1,4 +1,4 @@
-package com.sohu.cache.app;
+package com.sohu.cache;
 
 import org.springframework.boot.Banner;
 import org.springframework.boot.SpringApplication;

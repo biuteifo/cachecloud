@@ -92,10 +92,10 @@ public class ConstUtils {
     /**
      * 机器统一的用户名、密码、端口
      */
-    public static String DEFAULT_USERNAME = "cachecloud";
+    public static String DEFAULT_USERNAME = "root";
     public static String USERNAME = DEFAULT_USERNAME;
 
-    public static String DEFAULT_PASSWORD = "cachecloud";
+    public static String DEFAULT_PASSWORD = "root";
     public static String PASSWORD = DEFAULT_PASSWORD;
 
     public static int DEFAULT_SSH_PORT_DEFAULT = 22;
